@@ -1,0 +1,1 @@
+async function load(){const r=await fetch("/api/admin/summary"),d=await r.json();document.getElementById("result").textContent=r.ok?JSON.stringify(d,null,2):d.error}document.getElementById("load").onclick=load;document.getElementById("logout").onclick=async()=>{await fetch("/api/logout",{method:"POST"});location.href="/"};
