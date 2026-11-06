@@ -44,3 +44,14 @@
 .crash-multiplier{font-size:clamp(42px,12vw,70px);font-weight:1000;letter-spacing:-2px;color:#9ef5d0;text-shadow:0 0 24px #4be0b766;margin:15px 0 20px;font-variant-numeric:tabular-nums}
 .crash-stage{min-height:260px;display:flex;flex-direction:column;justify-content:center}
 .crash-stage .cashout-button{margin-top:18px}
+
+/* Player-driven mini-game selections */
+.strip-pick{cursor:pointer;font-size:clamp(20px,6vw,34px);background:linear-gradient(145deg,#4a5c91,#28335f);transition:.15s}
+.strip-pick.selected,.tower-pick.selected{background:linear-gradient(145deg,#ef79b1,#bd4386);border-color:#ffc0df;color:#fff;transform:translateY(-2px);box-shadow:0 5px 14px #e45b9c55}
+.tower-levels{max-width:100%;gap:10px}
+.tower-floor{background:#1a2448;border:1px solid #6878b044;border-radius:11px;padding:9px}
+.tower-floor>small{display:block;text-align:center;color:#cbd6ff;font-size:10px;font-weight:950;letter-spacing:1px;margin-bottom:8px}
+.tower-choices{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.tower-pick{padding:13px 5px;border:1px solid #7786b855;border-radius:9px;background:linear-gradient(145deg,#3c4d80,#28345f);color:#fff;font-size:22px;cursor:pointer;transition:.15s}
+.tower-pick:hover,.strip-pick:hover{filter:brightness(1.2)}
+#gameOptions label select{padding:12px;border-radius:10px;border:1px solid #ecd3e0;width:100%;font:inherit;color:#57334b}
