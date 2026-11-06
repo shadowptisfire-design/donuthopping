@@ -55,3 +55,11 @@
 .tower-pick{padding:13px 5px;border:1px solid #7786b855;border-radius:9px;background:linear-gradient(145deg,#3c4d80,#28345f);color:#fff;font-size:22px;cursor:pointer;transition:.15s}
 .tower-pick:hover,.strip-pick:hover{filter:brightness(1.2)}
 #gameOptions label select{padding:12px;border-radius:10px;border:1px solid #ecd3e0;width:100%;font:inherit;color:#57334b}
+
+/* Friend tipping panel */
+.tip-panel{margin:22px 0;border:1px solid #f0cddd;background:linear-gradient(145deg,#fff,#fff6fa)}
+.tip-panel form{display:grid;grid-template-columns:1fr 180px auto;align-items:end;gap:12px}
+.tip-panel label{margin:8px 0;color:#74465f}
+.tip-panel button{white-space:nowrap;margin-bottom:8px}
+.tip-history-line{margin:6px 0;padding:9px 12px;border-radius:10px;background:#fff0f6;color:#70435b;font-size:13px}
+@media(max-width:650px){.tip-panel form{grid-template-columns:1fr}.tip-panel button{margin:0}.tip-panel label{margin:4px 0}}
